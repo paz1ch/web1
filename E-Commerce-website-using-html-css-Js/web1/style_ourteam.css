@@ -5,6 +5,7 @@
 	padding-bottom: 50px;
 	color: #555;
 	
+	
 }
 
 h1
@@ -20,8 +21,8 @@ h1::after
 	background: #007bff;
 	display: block;
 	height: 3px;
-	/* width: 170px; */
-	margin: 20px auto   ;
+	width: 170px;
+	margin: 20px auto 0px ;
 }
 
 .profile-pic .img-box
@@ -29,19 +30,19 @@ h1::after
 	opacity: 1;
 	display: block;
 	position: relative;
+	
 }
 
 .profile-pic .img-box img
 {
-	filter: grayscale(1);
+	filter: grayscale(0);
 	
 }
 
 .profile-pic .img-box img:hover
 {
-	filter: grayscale(0);
+	filter: grayscale(20);
 	cursor: pointer;
-	
 }
 
 .profile-pic h2
@@ -63,12 +64,13 @@ h1::after
 
 #team .fa
 {
-	height:25px;
-	width: 25px;
-	color: #007bff !important;
+	height:35px;
+	width: 35px;
+	color: #fff !important;
 	background: #fff;
-	padding: 4px;
+	padding: 9px;
 	border-radius: 50%;
+	background-color: black;
 }
 
 .img-box ul
@@ -102,5 +104,5 @@ h1::after
 .img-responsive
 {
 	height: 250px;
-	width: 200px;
+	width: 300px;
 }
