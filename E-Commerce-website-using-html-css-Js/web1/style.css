@@ -1,7 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
-$itemGrow: 1.2;
-$duration: 250ms;
-
 
 *{
 	margin:0;
@@ -21,8 +18,6 @@ $duration: 250ms;
 .topnav 
 {
   	overflow: hidden;
-	
- 	
 }
 
 /* Style the links inside the navigation bar */
@@ -125,8 +120,8 @@ $duration: 250ms;
 /*-----product images------*/
 .featured-categories
 {
-	margin: 50px 0;
-	
+	margin: 10px;
+	margin-left: 50px;
 }
 
 .featured-categories img
@@ -178,11 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 50%;
 }
 
-#site {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 1em;
-}
+
 
 
 
@@ -377,7 +368,7 @@ form input.qty {
 
 #slider
 {
-	width: 100%;
+	width: 50%;
 }
 
 #about
@@ -418,73 +409,7 @@ form input.qty {
 	
 }
 
-#services
-{
-	background: black;
-	background-size: cover;
-	background-position: center;
-	color:#555!important;
-	background-attachment: fixed;
-	padding-top:50px;
-	padding-bottom: 50px;
-}
 
-
-
-#services h1
-{
-	text-align: center;
-	color:#fff!important;
-	padding-bottom: 10px;
-}
-
-#services h1::after
-{
-	content: '';
-	background:#efefef;
-	display: block;
-	height:3px;
-	width:170px;
-	margin: 20px auto 5px;
-}
-#services h3
-{
-	font-weight: 400;
-	color: white;
-	margin: auto;
-}
-#services p
-{
-	font-weight: 400;
-	color: white;
-	margin: auto;
-	margin-top: 20px;
-}
-
-
-#services i
-{
-	
-	color: white;
-}
-
-.icon
-{
-	font-size:40px;
-	margin:20px auto;
-	padding: 20px;
-	height: 80px;
-	width:80px;
-	border:1px solid #fff;
-	border-radius:50%;
-}
-
-.services .col-md-4:hover{
-	background:#007bff;
-	cursor: pointer;
-	transition: 0.7s;
-	
-}
 /*-------contact---------*/
 
 #contact
@@ -511,6 +436,11 @@ form input.qty {
 	background: #fff;
 	padding: 10px;
 	margin: 15px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
 }
 
 .contact-info .fa
@@ -518,6 +448,7 @@ form input.qty {
 	margin: 10px;
 	color: #007bff;
 	font-weight: bold;
+	
 }
 #site-info {
 	height: 3em;
@@ -563,7 +494,7 @@ body#checkout-page #site-info {
 
 .shopping-cart tr:nth-child(even) {
 	background: #fafafa;
-},
+}
 
 .shopping-cart td.pdelete {
 	text-align: center;
