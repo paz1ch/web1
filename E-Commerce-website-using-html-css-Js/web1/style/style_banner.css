@@ -3,9 +3,9 @@
     margin-left: 17%;
 }
 .carousel-inner .carousel-item img {
-    margin-top: 80px;
+    margin-top: 100px;
     border-radius: 5px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .carousel-control-prev-1, .carousel-control-next-1{
     position: absolute;
