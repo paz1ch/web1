@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product details</title>
+<meta charset="utf-8" />
+<meta name="viewpoint" content="width=device-width,initial-scal=1.0">
+<meta http-equip="X-UA-compatible" content="ie=edge">
+<link rel="icon" type="image/png" href="images/Real-Madrid.jpg">
+<link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="style/style_topnav.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="style/style_ourteam.css" media="screen" type="text/css">
+<link rel="stylesheet" href="style/style_banner.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="style/style_serviece.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="style/style_product.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="style/style_pagination.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.store.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style/product-detail.css" media="screen" type="text/css">
+<link rel="stylesheet" href="style/bootstrap.min.css" media="screen" type="text/css">
+<link rel="stylesheet" href="style/font-awesome.min.css" media="screen" type="text/css">
+</head>
+
+<body>
+
+	<!-- top nav -->
+	
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="#aboutus">About US</a>
+        <a href="#services">Our Services</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact">Contact</a>
+        <a href="#account" class="account">Account</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <main role="main">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="container-fliud">
+                    <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post"
+                        action="/php/twig/frontend/giohang/themvaogiohang">
+                        <input type="hidden" name="sp_ma" id="sp_ma" value="5">
+                        <input type="hidden" name="sp_ten" id="sp_ten" value="Samsung Galaxy Tab 10.1 3G 16G">
+                        <input type="hidden" name="sp_gia" id="sp_gia" value="10990000.00">
+                        <input type="hidden" name="hinhdaidien" id="hinhdaidien" value="samsung-galaxy-tab-10.jpg">
+
+                        <div class="wrapper row">
+                            <div class="preview col-md-6">
+                                <div class="preview-pic tab-content">
+                                    <div class="tab-pane" id="pic-1">
+                                        <img src="images/bed5.jpg">
+                                    </div>
+                                    <div class="tab-pane" id="pic-2">
+                                        <img src="images/bed5.jpg">
+                                    </div>
+                                    <div class="tab-pane active" id="pic-3">
+                                        <img src="images/bed5.jpg">
+                                    </div>
+                                </div>
+                                <ul class="preview-thumbnail nav nav-tabs">
+                                    <li class="active">
+                                        <a data-target="#pic-1" data-toggle="tab" class="">
+                                            <img src="images/bed5.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-2" data-toggle="tab" class="">
+                                            <img src="images/bed5.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-3" data-toggle="tab" class="active">
+                                            <img src="images/bed5.jpg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="details col-md-6">
+                                <!-- Tên Snar phẩm được thêm ở đây-->
+                                <h3 class="product-title">Tên Sản Phẩm nhá</h3>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="review-no">99999 reviews</span>
+                                </div>
+                                <!--Mô tả sản phẩm ở đây-->
+                                <p class="product-description">Mô tả sản phẩm</p>
+                                <small class="text-muted">Giá cũ: <s><span>10,980,000.00 vnđ</span></s></small>
+                                <h4 class="price">Giá hiện tại: <span>10,990,000.00 vnđ</span></h4>
+                                <p class="vote"><strong>100%</strong> hàng <strong>Chất lượng</strong>, đảm bảo <strong>Uy tín</strong>!</p>
+                                <div class="form-group">
+                                    <label for="soluong">Số lượng đặt mua:</label>
+                                    <input type="number" class="form-control" id="soluong" name="soluong">
+                                </div>
+                                <div class="action">
+                                    <a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a>
+                                    <a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-fluid">
+                    <h3>Thông tin chi tiết về Sản phẩm</h3>
+                    <div class="row">
+                        <div class="col">
+                            Đồ nội thất rất tồi không nên mua!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End block content -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span>Bản quyền © bởi <a href="https://nentang.vn">Nền Tảng</a> - <script>document.write(new Date().getFullYear());</script>.</span>
+            <span class="text-muted">Hành trang tới Tương lai</span>
+
+            <p class="float-right">
+                <a href="#">Về đầu trang</a>
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popperjs/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom script - Các file js do mình tự viết -->
+    <script src="../assets/js/app.js"></script>
+<!-- main  -->>
+
+
+
+<section style="margin-top:100px; font-family: Trebuchet MS;">
+      <div class="container"> 
+        <h1>Sản phẩm gợi ý</h1>
+        <div id="suggestions" class="container mt-5 mb-3 position-relative">
+            <i id="btn-pre" aria-hidden="true" style="margin-left:-50px;left:0;top:50%; transform: translateY(-50%); font-size: 70px;color:#ddd" onclick="preSuggestions()"></i>
+            <i id="btn-nxt" aria-hidden="true" style="margin-right:-50px; right:0; top:50%; transform: translateY(-50%); font-size: 70px;color:#ddd" onclick="nxtSuggestions()"></i>
+        </div>
+    </div>
+  </section>
+
+
+
+	
+		
+<!------Services Section------->		
+	<section id="services">
+	
+		<div class="container">
+			<h1>Our Services</h1>
+			<div class="row services" >
+				<div class= "col-md-4 text-center">
+					<div class="icon">
+					<i class="fa fa-phone"></i>
+					</div>
+					<h3> 24/7 Support</h3>
+					<p>on order related queries</p>
+				</div>
+			
+				<div class="col-md-4 text-center">
+					<div class="icon">
+					<i class="fa fa-shopping-cart"></i>
+					</div>
+					<h3> Return within 30 days</h3>
+					<p>of receiving your order</p>
+				</div>
+			
+				<div class="col-md-4 text-center">
+					<div class="icon">
+					<i class="fa fa-truck"></i>
+					</div>
+					<h3>Get free delivery</h3>
+					<p>on orders above 99Euro</p>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+	
+
+
+<!-----Team------->
+<section id="team">
+	
+	<div class="container">
+		<h1>Our Team</h1>
+		<div class="row">
+			<div class="col-md-4 profile-pic text-center">
+				<div class="img-box">
+				<img src="images/kevin.jpg" class="img-responsive">
+				<ul>
+					<a href="https://www.facebook.com/"><li><i class="fa fa-facebook"></i></li></a>
+					<a href="https://twitter.com/login"><li><i class="fa fa-twitter"></i></li></a>
+					<a href="https://www.linkedin.com/home"><li><i class="fa fa-linkedin"></i></li></a>
+				</ul>
+				</div>
+				<h2>Đỗ Nguyễn Nhật Trường</h2>
+				<h3>MSSV: 3122411230</h3>
+				
+			</div>
+			<div class="col-md-4 profile-pic text-center">
+				<div class="img-box">
+				<img src="images/mu.jpg" class="img-responsive">
+				<ul>
+					<a href="https://www.facebook.com/"><li><i class="fa fa-facebook"></i></li></a>
+					<a href="https://twitter.com/login"><li><i class="fa fa-twitter"></i></li></a>
+					<a href="https://www.linkedin.com/home"><li><i class="fa fa-linkedin"></i></li></a>
+				</ul>
+				</div>
+				<h2>Đặng Hùng Phúc</h2>
+				<h3>MSSV: 3122411153</h3>
+				
+			</div>
+			
+			<div class="col-md-4 profile-pic text-center">
+				<div class="img-box">
+				<img src="images/Real-Madrid.jpg" class="img-responsive">
+				<ul>
+					<a href="https://www.facebook.com/"><li><i class="fa fa-facebook"></i></li></a>
+					<a href="https://twitter.com/login"><li><i class="fa fa-twitter"></i></li></a>
+					<a href="https://www.linkedin.com/home"><li><i class="fa fa-linkedin"></i></li></a>
+				</ul>
+				</div>
+				<h2>Nguyễn Văn Nghĩa</h2>
+				<h3>MSSV: 3122411133</h3>
+				
+			</div>
+		</div>	
+	</div>
+	
+</section>
+
+<!------COntact------------>	
+<section id="contact">	
+	
+	<div class="container">
+		<h1>Get In Touch</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<form class="contact-form">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Your Name..">
+				</div>
+				<div class="form-group">
+				<input type="number" class="form-control" placeholder="Phone number">
+				</div>
+				<div class="form-group">
+				<input type="email" class="form-control" placeholder="Email">
+				</div>
+				<div class="form-group">
+				<textarea class="form-control" rows="4" placeholder="Message"></textarea>
+				</div>
+			
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			<div class="col-md-6 contact-info">
+				<div class="follow"><b><i class="fa fa-map-marker"></i>  </b>2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</div>
+				<div class="follow"><b><i class="fa fa-mobile"></i>  </b>(+84) 328246613</div>
+				<div class="follow"><b><i class="fa fa-envelope"></i>  </b>Khongquenef@gmail.com</div>
+				
+				
+				<div class="follow"><label><b>Get Social </b></label>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
+				<a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
+				<a href="https://myaccount.google.com/"><i class="fa fa-google-plus"></i></a>
+				
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+</section>
+
+
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/popper.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/app.js"></script>
+
+</body>
+</html>	
