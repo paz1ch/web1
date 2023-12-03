@@ -1,0 +1,89 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WEB ADMIN</title>
+  <link rel="stylesheet" href="style/style_admin.css" />
+  <link rel="stylesheet" href="style/style_admin-section.css" />
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  
+  <div class="container">
+    <nav>
+      <div class="navbar">
+        <a href="index.html" style="color: black;">
+        <div class="logo">
+          <img src="image/phuccac.jpg" alt="">
+          <h1>Phúc</h1>
+        </div>
+        <ul>
+          <li><a href="user_admin.html">
+            <i class="fa fa-user fa-xl"></i>
+            <span class="nav-item">Khách hàng</span>
+          </a>
+          <li><a href="cart_admin.html">
+            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            <span class="nav-item">Đơn hàng</span>
+          </a>
+          </li>
+          <li><a href="statistic_admin.html">
+            <i class="fa-solid fa-chart-simple fa-xl"></i>
+            <span class="nav-item">Thống kê</span>
+          </a>
+           <!-- drop down sidebar -->
+          <li>
+            <div class ="sidenav">
+              <button class="dropdown-btn">
+                <i class="fa-solid fa-list fa-xl"></i>
+                <span class="nav-item"> Sản phẩm </span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="add_products.html">Thêm</a>
+                <a href="edit_products.html">Sửa và xóa</a>
+              </div>  
+              <script>
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                    } else {
+                      dropdownContent.style.display = "block";
+                    }
+                  });
+                }
+              </script>
+            </div>
+          </li>
+          <li class="bottom"><a href="#" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <p>WEB ADMIN</p>
+      </div>
+      <div class="background-section">
+        <div class="main-body">
+            <h1>BIỂU ĐỒ DOANH SỐ</h1>
+        </div>
+        <div>
+            <img src="image/chart1.png" alt="chart" width="800px">
+        </div>
+        </div>
+    </section>
+  </div>
+</body>
+</html>

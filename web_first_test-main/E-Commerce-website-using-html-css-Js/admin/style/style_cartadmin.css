@@ -1,0 +1,28 @@
+table,td,th{
+    border: solid 1px black;
+}
+table{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+td,th{
+    padding: 10px;
+}
+.duyet-form, .buttonDuyet{
+    cursor: pointer;
+}
+.buttonDuyet:hover{
+    font-weight: bold;
+    color: red;
+}
+.background-section{
+    padding-bottom: 16%;
+}   
