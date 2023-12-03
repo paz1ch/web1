@@ -25,7 +25,7 @@
 			<a href="index.html#services">Dịch vụ</a>
 			<a href="index.html#ourteam">Thành viên</a>
 			<a href="index.html#contact">Liên lạc</a>
-			<a href="index.html#account" class="account">Tài khoản</a>
+            <a href="login.html" class="account"> Tài khoản</a>
 			<div class="search-container">
 				<form action="/action_page.php">
 				<input type="text" placeholder="Search.." name="search">
@@ -58,11 +58,14 @@
 				</p>
 				<ul id="shopping-cart-actions">
 					<li>
-						<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+						<a href="index.html" id="thanhtoan" class="btn">Thanh toán</a>
 					</li>
-					<li>
-						<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-					</li>
+					<script language="javascript">
+						var button = document.getElementById("thanhtoan");
+						button.onclick = function(){
+							alert("Thanh toán thành công");
+						}
+					</script>
 					<li>
 						<a href="index.html" class="btn">Tiếp tục mua sắm</a>
 					</li>
