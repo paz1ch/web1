@@ -1,0 +1,24 @@
+table,th,td{
+    border: solid 1px black;
+}
+table{
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5%;
+}
+th,tr{
+    padding: 5px;
+}
+th{
+    background: black;
+    color: white;
+}
+.chart{
+    padding: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.background-section{
+    padding-bottom: 16%;
+}
