@@ -6,6 +6,3 @@ Danh sách thành viên nhóm 7:
 2. Đỗ Nguyễn Nhật Trường    -   3122411230
 3. Nguyễn Văn Nghĩa      -      3122411133
 
-
-
-truong ngu
