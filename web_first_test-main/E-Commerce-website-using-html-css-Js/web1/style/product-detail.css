@@ -1,3 +1,7 @@
+.spacing{
+    margin-bottom: 6%;
+}
+
 img {
     max-width: 100%;
 }
@@ -145,22 +149,15 @@ img {
     margin-left: 20px;
 }
 
-.add-to-cart,
-.like {
-    background: #ff9f1a;
-    padding: 1.2em 1.5em;
-    border: none;
+.add-to-cart, .like {
     text-transform: UPPERCASE;
     font-weight: bold;
     color: #fff;
-    -webkit-transition: background .3s ease;
-    transition: background .3s ease;
 }
 
 .add-to-cart:hover,
-.like:hover {
-    background: #b36800;
-    color: #fff;
+.like:hover, .fa:hover {
+    background: red;
 }
 
 .not-available {
@@ -216,4 +213,24 @@ img {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
+}
+
+
+ #btnThemVaoGioHang, #muangay{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#muangay{
+    background-color: #ee4d2d;
+}
+#btnThemVaoGioHang{
+    border: solid 2px #ee4d2d;
+    background-color: #eadbd9;
+    color: #ee4d2d;
+}
+.add-to-cart{
+    margin-right: 15px;
+}
+#soluong{
+    width: 30%;
 }
