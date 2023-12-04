@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Your Shopping Cart</title>
+<title>Giỏ hàng</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="style/style_banner.css" media="screen" type="text/css" />
 <link rel="stylesheet" href="style/style_web_cart.css" media="screen" type="text/css" />
@@ -10,9 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="script/jquery.store.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -20,16 +17,13 @@
 		<div class="topnav">
 			<a class="active" href="index.html">Trang chủ</a>
 			<a href="products.html">Sản phẩm</a>
-			<a href="#cart">Giỏ hàng</a>
-			<a href="index.html#aboutus">Về chúng tôi</a>
-			<a href="index.html#services">Dịch vụ</a>
-			<a href="index.html#ourteam">Thành viên</a>
-			<a href="index.html#contact">Liên lạc</a>
-            <a href="login.html" class="account"> Tài khoản</a>
+			<a href="cart.html">Giỏ hàng</a>
+			<a href="login.html" class="account">Đăng nhập</a>
+			<a href="advanced_search.html" class="account">Tìm kiếm nâng cao</a>
 			<div class="search-container">
-				<form action="/action_page.php">
+				<form action="">
 				<input type="text" placeholder="Search.." name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
+				<button type="submit"><i class="fa fa-search"> </i></button>
 				</form>
 			</div>
 		</div>
@@ -46,37 +40,47 @@
 					<tr class="item">
 						<th scope="col">Sản phẩm</th>
 						<th scope="col">Số lượng</th>
-						<th scope="col" colspan="2">Đơn giá</th>
+						<th scope="col">Thành tiền</th>
+
 					</tr>
 				</thead>
 				<tbody>
-				
+					<tr>
+						<td>Gương-3</td>
+						<td>3</td>
+						<td>36€</td>
+					</tr>
+					<tr>
+						<td>sofa-3</td>
+						<td>1</td>
+						<td>34€</td>
+					</tr>
+					<tr>
+						<td>Bàn-3</td>
+						<td>3</td>
+						<td>60€</td>
+					</tr>
 				</tbody>
 				</table>
 				<p id="sub-total">
-					<strong>Tổng cộng</strong>: <span id="stotal"></span>
+					<strong>Tổng cộng</strong>: 130€<span id="stotal"></span>
 				</p>
 				<ul id="shopping-cart-actions">
 					<li>
-						<a href="index.html" id="thanhtoan" class="btn">Thanh toán</a>
+						<a href="cart.html" id="thanhtoan" class="btn">Thanh toán</a>
 					</li>
-					<script language="javascript">
-						var button = document.getElementById("thanhtoan");
+					<script>
+						button = document.getElementById("thanhtoan");
 						button.onclick = function(){
 							alert("Thanh toán thành công");
 						}
 					</script>
 					<li>
-						<a href="index.html" class="btn">Tiếp tục mua sắm</a>
+						<a href="products.html" class="btn">Tiếp tục mua sắm</a>
 					</li>
 				</ul>
 			</form>
 		</div>
 	</div>
-
-<footer id="site-info">
-		Copyright &copy; 
-	</footer>
-
 </body>
 </html>	
