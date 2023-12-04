@@ -1,0 +1,5 @@
+12h49 am
+- chỉnh sửa và gắn link chi tiết sản phẩm cho index.html và product.thml
+- thêm 1 vài file css
+- chỉnh sửa lại file cart.html
+- chỉnh lại bố cục file product-detail.html
