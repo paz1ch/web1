@@ -1,30 +1,33 @@
-.row-banner{
-    width: 1000px;
-    margin-left: 17%;
-}
-.carousel-inner .carousel-item img {
-    margin-top: 100px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-}
-.carousel-control-prev-1, .carousel-control-next-1{
+.carousel {
+    margin-bottom: 4rem;
+  }
+  
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 42rem;
+  }
+  
+  .carousel-item>img {
     position: absolute;
     top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    opacity: .5;
-    transition: opacity .15s ease;
-    background-color: black!important;
-    margin-top: 250px;
-    margin-bottom: 250px;
-    width: 6%;
-}
-.carousel-control-next-1{
-    margin-left: 94%;
-}
+    left: 0;
+    min-width: 100%;
+    height: 42rem;
+  }
+
+  .text-banner{
+    color: white;
+
+  }
+  #myCarousel{
+    padding-top: 30px;
+  }
