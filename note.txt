@@ -4,6 +4,8 @@
 - chỉnh sửa lại file cart.html
 - chỉnh lại bố cục file product-detail.html
 
-3h58 12/8
+4h00 12/8
 - chỉnh sửa lại thanh side bar của web admin
 - chỉnh sửa lại banner image của trang chủ và top nav
+
+
