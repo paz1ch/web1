@@ -52,7 +52,7 @@ img:hover{
 .text:hover{
   color: red;
 }
-img{
+.image{
   filter: brightness(90%);
   width: 300px;
 }
