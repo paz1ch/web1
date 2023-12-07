@@ -7,7 +7,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(36, 48, 44);
+  background-color: #343a40;
   position:fixed;
   top: 0;
   width: 100%;
@@ -17,22 +17,23 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(200, 200, 200);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: rgb(36, 48, 44);
+  background-color: #343a40;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav:hover a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .topnav a.active {
-  background-color: #2196F3;
+  background-color: #3fa4f7;
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .topnav .search-container {

@@ -4,119 +4,6 @@
 	margin:0;
 	padding: 0;
 }
-
-#nav-bar
-{
-	position:sticky;
-	top: 0;
-	z-index: 10;
-	
-	
-}
-
-/* Add a black background color to the top navigation bar */
-.topnav 
-{
-  	overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a 
-{
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 26px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-  background-color: #00CDCD;
-  
-}
-
-.navbarNav ul .li
-{
-	color: white;
-	background-color: black;
-}
-
-.topnav a 
-{
-  	background-color: white;
-	font-size: 20px;
-  
-}
-.navbar-brand img
-{
-	height:100px;
-	padding-left:0;
-	
-}
-
-.navbar-nav li
-{
-	padding: 0 10px;
-}
-
-.navbar-nav li a
-{
-	float: right;
-	text-align: left;
-	font-size: 20px;
-	
-	background-color: #00CDCD;
-	
-  	
-	
-}
-
-
-#nav-bar ul li a:hover
-{
-	color:#007bff!important;
-}
-
-.navbar
-{
-	background-color: #00CDCD;
-	margin-bottom: 20px;
-	
-}
-
-.navbar-toggler
-{
-	border: none;
-	
-}
-
-.navbar-link
-{
-	color:#555!important;
-	font-weight:600;
-	font-size:16px;
-}
-
-
-#Slider
-{
-	
-	width: auto;
-	height: 240px;;
-}
-
-
-
 /*-----product images------*/
 img{
 	filter: brightness(90%);
@@ -177,9 +64,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
-
 /*-----product-top css-------*/
 
 .product-top img
@@ -213,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 
 }
-.fa:hover{
+.fa:hover:not(.fa-search){
 	font-weight: bold;
 	background-color: yellow;
 }
@@ -518,6 +402,9 @@ body#checkout-page #site-info {
 	margin: 1.5em 0;
 }
 
-    
+/* dòng ngăn cách các nội dung của trang chủ */
+hr.featurette-divider {
+    margin: 50px 200px;
+  }
 
 

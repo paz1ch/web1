@@ -5,4 +5,3 @@ Danh sách thành viên nhóm 7:
 1. Đặng Hùng Phúc      -        3122411153
 2. Đỗ Nguyễn Nhật Trường    -   3122411230
 3. Nguyễn Văn Nghĩa      -      3122411133
-
