@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewpoint" content="width=device-width,initial-scal=1.0">
     <meta http-equip="X-UA-compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="images/Real-Madrid.jpg">
+    <link rel="icon" type="image/png" href="images/icon_search.png">
     <link rel="stylesheet" href="style/style.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="style/style_topnav.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="style/style_ourteam.css" media="screen" type="text/css">
@@ -25,20 +25,22 @@
 
     <body>
         <!-- header -->
-        <div class="topnav">
-			<a class="active" href="index.html">Trang chủ</a>
-			<a href="products.html">Sản phẩm</a>
-			<a href="cart.html">Giỏ hàng</a>
-			<a href="login.html" class="account">Đăng nhập</a>
-			<a href="search.html" class="account">Tìm kiếm nâng cao</a>
-			<div class="search-container">
-				<form action="php">
-				<input type="text" placeholder="Search..." name="search">
-				<button type="submit"><i class="fa fa-search"> </i></button>
-				</form>
-			</div>
-            <a href="login.html" class="account">Đăng nhập</a>
-		</div>
+        <section id="home">
+            <div class="topnav">
+                <a class="active" href="index.html">Trang chủ</a>
+                <a href="products.html">Sản phẩm</a>
+                <a href="cart.html">Giỏ hàng</a>
+                <a href="search.html" class="account">Tìm kiếm</a>
+                <a href="login.html" class="account">Đăng nhập</a>
+                <a href="register.html" class="account">Đăng ký</a>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"> </i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <!--end header-->
     
