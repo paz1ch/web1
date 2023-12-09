@@ -408,3 +408,9 @@ hr.featurette-divider {
   }
 
 
+/*edit user*/
+img.editphucadmin{
+	border-radius: 50%;
+	width: 4.5%;
+	height: 4.5%;
+}
