@@ -46,7 +46,16 @@
 		</div>
 	</section>
     <!-- end header -->
-    <!-- end header -->
+
+    <style>
+        a.button{
+            background-color: #28A745;
+            color: #ffffff;
+            padding: 2% 39.9%;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
 
     <div style="margin-bottom: 6%;"></div>
     <main role="main">
@@ -140,7 +149,14 @@
                                     </div>
                                     <input class="form-control" type="text" placeholder="CMND" name="kh_cmnd">
                                 </div>
-                                <button class="btn btn-block btn-success" name="btnDangKy">Tạo tài khoản</button>
+                                <!-- <button class="btn btn-block btn-success" name="btnDangKy">Tạo tài khoản</button> -->
+                                <script>
+                                    function success()
+                                    {
+                                        alert("Đăng ký tài khoản thành công!")
+                                    }
+                                </script>
+                                <a href="login.html" class="button" onclick="success()">Tạo tài khoản</a>
                             </div>
                             <div class="card-footer p-4">
                                 <div class="row">
