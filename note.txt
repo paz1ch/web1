@@ -8,5 +8,7 @@
 - chỉnh sửa lại thanh side bar của web admin
 - chỉnh sửa lại banner image của trang chủ và top nav
 
+1h00 12/10/2023
+- thêm trang thanh toán (thanhtoan.html)
 
 note link https://www.iconarchive.com/show/shop-cart-icons-by-fasticon.html
