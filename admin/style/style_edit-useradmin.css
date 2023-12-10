@@ -1,4 +1,4 @@
-
+/* css của bảng */
 table, th, td{
     margin-left: 5%;
     text-align: left;
@@ -12,9 +12,9 @@ th, td{
 td{
     padding-bottom: 40px;
 }
-
+/* phần nội dung */
 select, input:not(#img), option{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(230, 230, 230);
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -30,24 +30,21 @@ select, input:not(#img), option{
     transition: border-color .15s
 }
 
-/* image của cập nhật hình ảnh */
 i[class="fa-solid fa-image"]{
     margin-top: 10px;
 }
-
+/* ảnh đại diện */
 .img{
-    font-size: 1rem;
-    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
 }
 .img:hover{
     background-color: #343a40;
     cursor: pointer;
-    color: rgb(228, 228, 228);
-    padding: 10px;
-    border-radius: 5px;
+    color: white;
 }
 
-/* nút reset và cập nhật */
+/* nút cập nhật và reset */
 .buttonsubmit, .buttonReset{
     font-size: 16px;
     background-color:#343a40;
@@ -66,17 +63,25 @@ i[class="fa-solid fa-image"]{
     color: white;
 }
 .reset-form, .submit-form{
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+/* background của trang */
+.background-section{
+    padding-bottom: 3%;
 }
 
 /* phần quay lại */
 .button-back{
-    position: fixed;
-    bottom: 90px;
-    margin-left: 20px;    
+    position: block;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    z-index: 0;    
 }
 
-/*  */
-.background-section{
-    padding-bottom: 10%;
+/* anh dai dien */
+.avatar{
+    padding-top:10px
 }
+
