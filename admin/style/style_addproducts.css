@@ -30,6 +30,7 @@ select, input:not(#img), option{
     transition: border-color .15s
 }
 
+/* image của cập nhật hình ảnh */
 i[class="fa-solid fa-image"]{
     margin-top: 10px;
 }
@@ -39,21 +40,43 @@ i[class="fa-solid fa-image"]{
     font-weight: 400;
 }
 .img:hover{
-    background-color: aqua;
+    background-color: #343a40;
     cursor: pointer;
-}
-.buttonsubmit, .buttonReset{
-    font-size: 20px;
-    background-color:aquamarine;
+    color: rgb(228, 228, 228);
     padding: 10px;
+    border-radius: 5px;
+}
+
+/* nút reset và cập nhật */
+.buttonsubmit, .buttonReset{
+    font-size: 16px;
+    background-color:#343a40;
+    padding: 15px;
     border-radius: 10px;
     cursor: pointer;
 }
 .submit-form, .reset-form{
     display:inline-block;
-    padding-left: 10px;
+    padding-left: 15px;
     font-weight: bold;
+    color: rgb(222, 222, 222);
+    margin-top: 15px;
 }
 .submit-form:hover, .reset-form:hover{
-    color: red;
+    color: white;
+}
+.reset-form, .submit-form{
+    margin-top: 30px;
+}
+
+/* phần quay lại */
+.button-back{
+    position: fixed;
+    bottom: 90px;
+    margin-left: 20px;    
+}
+
+/*  */
+.background-section{
+    padding-bottom: 10%;
 }
