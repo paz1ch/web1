@@ -7,8 +7,9 @@ table, th, td {
     text-align: left;
 }
 th{
-    background-color: black;
+    background-color: #343a40;
     color: white;
+    font-size: 16px;
 }
 th,td {
     padding: 10px;
@@ -16,9 +17,66 @@ th,td {
 th, .stt{
     text-align: center;
 }
+/* nút khoá và mwr */
 .fa-solid{
     padding: 5px;
 }
+.fa-solid:hover{
+    cursor: pointer;
+}
+/* ô thông tin và ô chức năng */
+
+.thongtin{
+    width: 15%;
+}
+.chitiet{
+    width: 9%;
+    color: blue;
+    text-align: center;
+}
+.sua{
+    width: 6%;
+    color: blue;
+    text-align: center;
+}
+.chitiet:hover, .sua:hover{
+    font-weight: bold;
+}
+
+/* phần tìm kiếm người dùng */
+.form-search{
+    padding: 15px;
+    background-color: #343a40;
+}
+.h5-search{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+.select{
+    padding: 10px 0 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.button{
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+/* background của page */
 .background-section{
-    padding-bottom: 16%;
+    padding-bottom: 4%;
+    margin-bottom: 3%;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 5px;
 }

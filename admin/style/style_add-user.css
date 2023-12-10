@@ -14,7 +14,7 @@ td{
 }
 
 select, input:not(#img), option{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(230, 230, 230);
     display: block;
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
@@ -30,24 +30,19 @@ select, input:not(#img), option{
     transition: border-color .15s
 }
 
-/* image của cập nhật hình ảnh */
 i[class="fa-solid fa-image"]{
     margin-top: 10px;
 }
 
 .img{
-    font-size: 1rem;
-    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
 }
 .img:hover{
     background-color: #343a40;
     cursor: pointer;
-    color: rgb(228, 228, 228);
-    padding: 10px;
-    border-radius: 5px;
+    color: white;
 }
-
-/* nút reset và cập nhật */
 .buttonsubmit, .buttonReset{
     font-size: 16px;
     background-color:#343a40;
@@ -59,24 +54,12 @@ i[class="fa-solid fa-image"]{
     display:inline-block;
     padding-left: 15px;
     font-weight: bold;
-    color: rgb(222, 222, 222);
+    color: rgb(231, 231, 231);
     margin-top: 15px;
 }
 .submit-form:hover, .reset-form:hover{
     color: white;
 }
-.reset-form, .submit-form{
-    margin-top: 30px;
-}
-
-/* phần quay lại */
-.button-back{
-    position: fixed;
-    bottom: 90px;
-    margin-left: 20px;    
-}
-
-/*  */
 .background-section{
-    padding-bottom: 10%;
+    padding-bottom: 2%;
 }

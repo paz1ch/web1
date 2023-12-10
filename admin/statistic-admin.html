@@ -1,0 +1,272 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>WEB ADMIN</title>
+    <link rel="stylesheet" href="style/style_admin.css" />
+    <link rel="stylesheet" href="style/style_statisticadmin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  </head>
+  <body>
+    
+    <div class="container">
+      <nav>
+        <div class="navbar">
+          <a href="index.html" style="color: black;">
+            <div class="logo">
+              <img src="image/phuccac.jpg" alt="">
+              <h1>Phúc</h1>
+            </div>
+          </a>  
+          <div class="account-type">Tài khoản: Admin</div>
+
+          <ul>
+            <li>
+             <!-- drop down sidebar -->
+              <div class ="sidenav">
+                <button class="dropdown-btn">
+                  <i class="fa-solid fa-user fa-xl"></i>
+                  <span class="nav-item">Quản lý người dùng </span>
+                </button>
+                <div class="dropdown-container">
+                  <a href="user-admin.html" class="font-bold">Quản lý</a>
+                  <a href="add_user-admin.html" class="font-bold">Thêm người dùng</a>
+                </div>  
+                <button class="dropdown-btn">
+                  <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                  <span class="nav-item">Quản lý đơn hàng </span>
+                </button>
+                <div class="dropdown-container">
+                  <a href="cart-admin.html" class="font-bold">Danh sách đơn</a>
+                </div>  
+                <button class="dropdown-btn">
+                  <i class="fa-solid fa-list fa-xl"></i>
+                  <span class="nav-item">Quản lý sản phẩm </span>
+                </button>
+                <div class="dropdown-container">
+                  <a href="products-admin.html" class="font-bold">Chi tiết sản phẩm</a>
+                  <a href="add_products-admin.html" class="font-bold">Thêm sản phẩm</a>
+                </div>  
+                <script>
+                  var dropdown = document.getElementsByClassName("dropdown-btn");
+                  var i;
+                  
+                  for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                      } else {
+                        dropdownContent.style.display = "block";
+                      }
+                    });
+                  }
+                </script>
+              </div>
+            </li>
+            <li >
+              <a href="statistic-admin.html" class="font-bold">
+                <i class="fa-solid fa-chart-simple fa-xl"></i>
+                <span class="nav-item">Thống kê</span>
+              </a>
+            </li>
+            <li class="bottom">
+              <a href="#" class="logout" onclick="logOut()"> 
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Đăng xuất</span>
+              </a>
+              <script>
+                function logOut(){
+                  if (confirm('Đăng xuất ?')) {
+                    alert("Đăng xuất thành công");
+                    location.reload();
+                  }
+                }
+              </script>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- top banner -->
+      <div class="top-banner">
+        <p>online store</p>
+      </div>
+
+      <section class="main">
+          <div class="main-top"></div>
+          <div class="background-section">
+            <div class="main-body">
+              <h1 style="text-transform: uppercase;">Tìm kiếm</h1>
+            </div>
+            <div>
+              <form action="#" class="form-search">
+                <div style="padding-bottom: 10px;">
+                  <h5 class="h5-search">--Tìm kiếm--</h5>
+                  <label for="" class="label">Năm:</label>
+                  <select name="" id="" class="select">
+                    <option value="">Tất cả</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                  </select>
+                  <label for="" class="label">Quý:</label>
+                  <select name="" id="" class="select">
+                    <option value="">Tất cả</option>
+                    <option value="">Quý 1</option>
+                    <option value="">Quý 2</option>
+                    <option value="">Quý 3</option>
+                    <option value="">Quý 4</option>
+                  </select>
+                  <label for="" class="label">Loại sản phẩm:</label>
+                  <select name="" id="" class="select">
+                    <option value="">Tất cả</option>
+                    <option value="">Giường</option>
+                    <option value="">Bàn</option>
+                    <option value="">Ghế</option>
+                    <option value="">Gương</option>
+                  </select>
+                  <input type="submit" id="submitbutton" style="display: none">
+                  <label for="submitbutton">
+                    <span onclick="searchFunc()" class="button">Tìm</span>
+                  </label>
+                  <input type="reset" id="resetbutton" class="button" onclick="buttonReset()" title="Reset tìm kiếm">
+                </div>
+                <script>
+                  function searchFunc(){
+                    alert("Tìm kiếm thành công!!!");
+                  }
+                  function buttonReset(){
+                    location.reload();
+                    alert("Reset thành công!!!");
+                  }
+                </script>
+              </form>
+            </div>
+          </div>
+          
+          <div class="background-section">
+          <div class="main-body">
+              <h1>THỐNG KÊ</h1>
+          </div>
+          <table>
+              <tr>
+                <th colspan="6">Năm 2019</th>
+              </tr>
+              <tr>
+                  <th>Thời gian</th>
+                  <th>Phân loại</th>
+                  <th>Tổng số lượng</th>
+                  <th>Đã bán</th>
+                  <th>Thu nhập</th>
+              </tr>
+              <tr>
+                  <td rowspan="4">Quý 1</td>
+                  <td>Giường</td>
+                  <td>500</td>
+                  <td>450</td>
+                  <td>135000</td>
+              </tr>
+              <tr>
+                  <td>Gương</td>
+                  <td>1000</td>
+                  <td>852</td>
+                  <td>17040</td>
+              </tr>
+              <tr>
+                  <td>Ghế</td>
+                  <td>1000</td>
+                  <td>910</td>
+                  <td>45500</td>
+              </tr>
+              <tr>
+                  <td>Bàn</td>
+                  <td>1000</td>
+                  <td>890</td>
+                  <td>53400</td>
+              </tr>
+              <tr>
+                <td rowspan="4">Quý 2</td>
+                  <td>Giường</td>
+                  <td>500</td>
+                  <td>450</td>
+                  <td>135000</td>
+              </tr>
+              <tr>
+                  <td>Gương</td>
+                  <td>1000</td>
+                  <td>852</td>
+                  <td>17040</td>
+              </tr>
+              <tr>
+                  <td>Ghế</td>
+                  <td>1000</td>
+                  <td>910</td>
+                  <td>45500</td>
+              </tr>
+              <tr>
+                  <td>Bàn</td>
+                  <td>1000</td>
+                  <td>890</td>
+                  <td>53400</td>
+              </tr>
+              <tr>
+                <td rowspan="4">Quý 3</td>
+                  <td>Giường</td>
+                  <td>500</td>
+                  <td>450</td>
+                  <td>135000</td>
+              </tr>
+              <tr>
+                  <td>Gương</td>
+                  <td>1000</td>
+                  <td>852</td>
+                  <td>17040</td>
+              </tr>
+              <tr>
+                  <td>Ghế</td>
+                  <td>1000</td>
+                  <td>910</td>
+                  <td>45500</td>
+              </tr>
+              <tr>
+                  <td>Bàn</td>
+                  <td>1000</td>
+                  <td>890</td>
+                  <td>53400</td>
+              </tr>
+              <tr>
+                <td rowspan="4">Quý 4</td>
+                  <td>Giường</td>
+                  <td>500</td>
+                  <td>450</td>
+                  <td>135000</td>
+              </tr>
+              <tr>
+                  <td>Gương</td>
+                  <td>1000</td>
+                  <td>852</td>
+                  <td>17040</td>
+              </tr>
+              <tr>
+                  <td>Ghế</td>
+                  <td>1000</td>
+                  <td>910</td>
+                  <td>45500</td>
+              </tr>
+              <tr>
+                  <td>Bàn</td>
+                  <td>1000</td>
+                  <td>890</td>
+                  <td>53400</td>
+              </tr>
+              <tr>
+                <th colspan="4" class="thunhap">Tổng thu nhập</th>
+                <td style="font-weight: bold;">20 tỷ</td>
+              </tr>
+          </table>
+          </div>
+      </section>
+    </div>
+  </body>
+  </html>

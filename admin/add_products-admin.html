@@ -2,12 +2,13 @@
   <html lang="en">
   <head>
     <title>WEB ADMIN</title>
-    <link rel="stylesheet" href="style/style_admin.css" />
-    <link rel="stylesheet" href="style/style_useradmin.css">
-    <!-- Font Awesome Cdn Link -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="style/style_admin.css"/>
+    <link rel="stylesheet" href="style/style_addproducts.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  </head>
   <body>
+    
     <div class="container">
       <nav>
         <div class="navbar">
@@ -16,7 +17,7 @@
               <img src="image/phuccac.jpg" alt="">
               <h1>Phúc</h1>
             </div>
-          </a>  
+          </a>
           <div class="account-type">Tài khoản: Admin</div>
           <ul>
             <li>
@@ -86,88 +87,107 @@
           </ul>
         </div>
       </nav>
+      
+      <!-- top banner -->
+      <div class="top-banner">
+        <p>Online store</p>
+      </div>
 
-    <!-- top banner -->
-    <div class="top-banner">
-      <p>online store</p>
-    </div>
-
-    <section class="main">
-        <div class="main-top"></div>
-        <div class="background-section">
+      <section class="main">
+          <div class="main-top"></div>
+          <div class="background-section">
           <div class="main-body">
-            <h1>TÌM KIẾM NGƯỜI DÙNG</h1>
+              <h1>THÊM SẢN PHẨM</h1>
           </div>
-          <div>
-            <form action="#" class="form-search">
-              <h5 class="h5-search">--Tìm kiếm--</h5>
-              <select name="" id="" class="select" style="padding-inline: 5px;">
-                <option value="">Tên</option>
-                <option value="">SDT</option>
-                <option value="">Email</option>
-              </select>
-              <input type="text" placeholder="Nhập" class="select" style="padding-inline: 10px;">
-              <input type="submit" id="submitbutton" style="display: none">
-              <label for="submitbutton">
-                <span onclick="searchFunc()" class="button">Tìm</span>
-              </label>
-              <input type="reset" id="resetbutton" class="button" onclick="buttonReset()" title="Reset tìm kiếm">
-              <script>
-                function searchFunc(){
-                  alert("Tìm kiếm thành công!!!");
-                }
-                function buttonReset(){
-                  location.reload();
-                  alert("Reset thành công!!!");
-                }
-              </script>
-            </form>
-          </div>
-
-        </div>
-        <div class="background-section">
-          <div class="main-body">
-            <h1>QUẢN LÝ TÀI KHOẢN NGƯỜI DÙNG</h1>
-          </div>
-          <table style="width:90%">
+          <table>
             <tr>
-              <th class="stt">STT</th>
-              <th>Họ và tên</th>
-              <th>Tên đăng nhập</th>
-              <th>Mật khẩu</th>
-              <th>Tình trạng</th>
-              <th>Khóa</th>
-              <th colspan="2" class="thongtin">Thông tin</th>
+              <th>Mã sản phẩm</th>
+              <th>Phân loại</th>
+              <th>Tên sản phẩm</th>
             </tr>
             <tr>
-              <td class="stt">1</td>
-              <td class="stt">Phúc Đặng</td>
-              <td>khongquenef@gmail.com</td>
-              <td>094321351</td>
-              <td class="stt">Đã khóa</td>
-              <td class="status stt" >
-                <i class="fa-solid fa-lock fa-xl" onclick="lock_1()"></i>
-                <i class="fa-solid fa-lock-open fa-xl" onclick="open_lock_1()"></i>
-                <script>
-                  function lock_1(){
-                    alert("Tài khoản đã bị khóa trước đó! Vui lòng mở khóa!!");
-                  }
-                  function open_lock_1(){
-                    alert("Mở Khóa thành công");
-                  }
-                </script>
+              <td>
+                <form action="">
+                  <input type="text" placeholder="Nhập mã sản phẩm">
+                </form>
               </td>
-              <td class="chitiet">
-                <a href="user-info.html" class="chitiet">Chi tiết</a>
+              <td>
+                <form action="">
+                  <select name="" id="" class='form-control'>
+                    <option value="">Giường</option>
+                    <option value="">Gương</option>
+                    <option value="">Bàn</option>
+                    <option value="">Ghế</option>
+                  </select>
+                </form>
               </td>
-              <td class="sua">
-                <a href="edit_user-admin.html" class="sua">Sửa</a>
+              <td>
+                <form action="">
+                  <input type="text" placeholder="Nhập tên sản phẩm">
+                </form>
               </td>
+            </tr>
+            <tr>
+              <th>Số lượng</th>
+              <th>Giá</th>
+              <th>Mô tả sản phẩm</th>
+            </tr>
+            <tr>
+              <td>
+                <form action="">
+                  <input type="text" placeholder="Nhập số lượng sản phẩm" >
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="text" placeholder="Nhập giá sản phẩm" >
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="text" placeholder="Nhập mô tả" >
+                </form>
+              </td>
+              <tr>
+                <th>Hình sản phẩm</th>
+              </tr>
+    
+              <tr>
+                <td>
+                  <form action="">
+                    <input type="file" name="uploadfile" id="img" style="display: none;">
+                    <label class="img" for="img">
+                        <i class="fa-solid fa-image"></i>
+                        Thêm hình ảnh
+                    </label>
+                  </form>
+                </td>
+              </tr>
             </tr>
           </table>
+          <form class="reset-form">
+            <input type="reset" id="buttonreset" style="display: none;" onclick="clickReset()">
+            <label class="buttonReset" for="buttonreset">Reset</label>
+            <script>
+              function clickReset(){
+                location.reload();
+                alert("Reset thành công!!");
+              }
+            </script>
+          </form>
+          <form class="submit-form">
+            <input type="submit" id="buttonsubmit" style="display: none;" onclick="clickSubmit()">
+            <label class="buttonsubmit" for="buttonsubmit">Thêm</label>
+            <script>
+              function clickSubmit(){
+                location.reload();
+                alert("Thêm sản phẩm thành công!!");
+              }
+            </script>
+          </form>
         </div>
-    </section>
-  </div>
+      </section>
+    </div>
   
   </body>
   </html>

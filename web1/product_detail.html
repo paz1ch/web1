@@ -29,7 +29,14 @@
     <div class="topnav">
         <a class="active" href="index.html">Trang chủ</a>
         <a href="products.html">Sản phẩm</a>
-        <a href="cart.html">Giỏ hàng</a>
+        <a href="#" id="giohang">Giỏ hàng</a>
+        <script>
+            button = document.getElementById("giohang");
+            button.onclick = function(){
+                alert("Hãy đăng nhập trước để vào giỏ hàng");
+                location.assign("login.html");
+            }
+        </script>
         <a href="search.html" class="account">Tìm kiếm</a>
         <a href="login.html" class="account">Đăng nhập</a>
         <a href="register.html" class="account">Đăng ký</a>

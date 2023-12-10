@@ -18,10 +18,26 @@
 		<div class="topnav">
 			<a class="active" href="index.html">Trang chủ</a>
 			<a href="products.html">Sản phẩm</a>
-			<a href="cart.html">Giỏ hàng</a>
+			<a href="#">Giỏ hàng</a>
+
+			<!-- <script>
+                button = document.getElementById("giohang");
+                button.onclick = function(){
+                    alert("Hãy đăng nhập trước để vào giỏ hàng");
+                    location.assign("login.html");
+                }
+            </script> -->
+
+
 			<a href="search.html" class="account">Tìm kiếm</a>
-			<a href="login.html" class="account">Đăng nhập</a>
-			<a href="register.html" class="account">Đăng ký</a>
+
+			<!-- Begin : Nút đăng xuất + ảnh đại diện -->
+			<!-- <div class="log_out_img"> -->
+				<a href="index.html" class="dangxuat">Đăng xuất</a>
+				<!-- <img src="images/phuccac.jpg" alt=""> -->
+			<!-- </div> -->
+
+			<!-- End: Nút đăng xuất + ảnh đại diện -->
 			<div class="search-container">
 				<form action="">
 				<input type="text" placeholder="Search.." name="search">
