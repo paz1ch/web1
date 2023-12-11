@@ -28,26 +28,21 @@
 	<section id="home">
 		<div class="topnav">
             <div style="display: flex;" class="dangxuat">
-                <a href="login.html">Đăng nhập</a>
-                <a href="register.html" class="dangxuat">Đăng ký</a>
+                <a href="personal_infomation.html">
+                    <img src="images/phuccac.jpg" class="editphucadmin" >
+                </a>
+                <a href="index.html" class="dangxuat">Đăng xuất</a>
             </div>
-			<a class="active" href="index.html">Trang chủ</a>
-			<a href="products.html">Sản phẩm</a>
-			<a href="#" id="giohang">Giỏ hàng</a>
-            <script>
-                button = document.getElementById("giohang");
-                button.onclick = function(){
-                    alert("Hãy đăng nhập trước để vào giỏ hàng");
-                    location.assign("login.html");
-                }
-            </script>
-			<a href="search.html" class="account">Tìm kiếm</a>
+			<a class="active" href="trangchu.html" style="background-color: black;">Trang chủ</a>
+			<a href="sanpham_trangchu.html">Sản phẩm</a>
+			<a href="cart.html">Giỏ hàng</a>
+			<a  href="search.html" class="account">Tìm kiếm</a>
 			<div class="search-container">
-				<form action="search.html">
-				<input type="text" placeholder="Search.." name="search">
+                <form action="timkiem_trangchu.html">
+				<input type="text" placeholder="Tìm kiếm.." name="search">
 				<button type="submit"><i class="fa fa-search"> </i></button>
 				</form>
-			</div>
+		    </div>
 		</div>
 	</section>
 	<!-- top nav -->	
@@ -73,6 +68,7 @@
 			</div>
 		</div>
 	</section>
+    <!--  -->
 	<section class="on-sale">
         <div id="site">
             <div class="container">
@@ -81,8 +77,7 @@
                 </div>
                 <script>
                     function addtoCart(){
-                        alert("Cần phải đăng nhập !!!")
-                        window.location.replace("login.html");
+                        alert("Thêm vào giỏ hàng thành công");
                     }
                 </script>
                 <div class="row">
@@ -91,7 +86,7 @@
                         <img src="images/mirror3.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_guong_3.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -122,8 +117,7 @@
                                 <script>
                                     button = document.getElementById("button");
                                     button.onclick = function(){
-                                        alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");
+                                    window.location.replace("thanhtoan.html");    
                                     }
                                 </script>
                         </form>
@@ -139,7 +133,7 @@
                         <div class="overlay-right">
                             <div class="overlay-right">
                                 <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                    <a href="product_detail_sofa_3.html">
+                                    <a href="chitietsanpham_trangchu.html">
                                         <i class="fa fa-eye"></i>
                                     </a>
                                 </button>
@@ -171,10 +165,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button2" /></p>
                                     <script>
                                         button = document.getElementById("button2");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                            window.location.replace("login.html");                                        
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                         </form>
                                 
@@ -189,7 +182,7 @@
                         <img src="images/table3.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_ban_3.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -219,10 +212,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button3" /></p>
                                     <script>
                                         button = document.getElementById("button3");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");    
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                                 </form>
                                 
@@ -237,7 +229,7 @@
                         <img src="images/bed3.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_giuong_3.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -267,10 +259,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button4" /></p>
                                     <script>
                                         button = document.getElementById("button4");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");    
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                                 </form>
                                 
@@ -288,7 +279,7 @@
                         <img src="images/mirror4.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_guong_4.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -318,10 +309,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button5" /></p>
                                     <script>
                                         button = document.getElementById("button5");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");    
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                                 </form>
                                 
@@ -335,7 +325,7 @@
                         <img src="images/sofa4.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_sofa_4.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -365,10 +355,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button6" /></p>
                                     <script>
                                         button = document.getElementById("button6");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");    
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                                 </form>
                                 
@@ -383,7 +372,7 @@
                         <img src="images/table4.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_ban_4.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -413,10 +402,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button7" /></p>
                                     <script>
                                         button = document.getElementById("button7");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");    
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                                 </form>
                                 
@@ -431,7 +419,7 @@
                         <img src="images/bed4.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Xem chi tiết">
-                                <a href="product_detail_giuong_4.html">
+                                <a href="chitietsanpham_trangchu.html">
                                     <i class="fa fa-eye"></i>
                                 </a>
                             </button>
@@ -462,10 +450,9 @@
                                     <p><input type="button" value="Mua ngay" class="btn" id="button8" /></p>
                                     <script>
                                         button = document.getElementById("button8");
-                                        button.onclick = function(){
-                                            alert("Cần phải đăng nhập !!!")
-                                        window.location.replace("login.html");    
-                                        }
+                                    button.onclick = function(){
+                                    window.location.replace("thanhtoan.html");    
+                                    }
                                     </script>
                                 </form>
                                 
