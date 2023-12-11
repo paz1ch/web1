@@ -27,21 +27,23 @@
 
 	<section id="home">
 		<div class="topnav">
+            <div style="display: flex;" class="dangxuat">
+                <a href="login.html">Đăng nhập</a>
+                <a href="register.html" class="dangxuat">Đăng ký</a>
+            </div>
 			<a class="active" href="index.html">Trang chủ</a>
 			<a href="products.html">Sản phẩm</a>
 			<a href="#" id="giohang">Giỏ hàng</a>
             <script>
-                button1 = document.getElementById("giohang");
-                button1.onclick = function(){
+                button = document.getElementById("giohang");
+                button.onclick = function(){
                     alert("Hãy đăng nhập trước để vào giỏ hàng");
                     location.assign("login.html");
                 }
             </script>
 			<a href="search.html" class="account">Tìm kiếm</a>
-			<a href="login.html" class="account">Đăng nhập</a>
-            <a href="register.html" class="account">Đăng ký</a>
 			<div class="search-container">
-				<form action="">
+				<form action="search.html">
 				<input type="text" placeholder="Search.." name="search">
 				<button type="submit"><i class="fa fa-search"> </i></button>
 				</form>
@@ -79,7 +81,8 @@
                 </div>
                 <script>
                     function addtoCart(){
-                        alert("Thêm vào giỏ hàng thành công");
+                        alert("Cần phải đăng nhập !!!")
+                        window.location.replace("login.html");
                     }
                 </script>
                 <div class="row">
@@ -119,7 +122,8 @@
                                 <script>
                                     button = document.getElementById("button");
                                     button.onclick = function(){
-                                    alert("Thêm vào giỏ hàng thành công");    
+                                        alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");
                                     }
                                 </script>
                         </form>
@@ -168,7 +172,8 @@
                                     <script>
                                         button = document.getElementById("button2");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                            window.location.replace("login.html");                                        
                                         }
                                     </script>
                         </form>
@@ -215,7 +220,8 @@
                                     <script>
                                         button = document.getElementById("button3");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");    
                                         }
                                     </script>
                                 </form>
@@ -262,7 +268,8 @@
                                     <script>
                                         button = document.getElementById("button4");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");    
                                         }
                                     </script>
                                 </form>
@@ -312,7 +319,8 @@
                                     <script>
                                         button = document.getElementById("button5");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");    
                                         }
                                     </script>
                                 </form>
@@ -358,7 +366,8 @@
                                     <script>
                                         button = document.getElementById("button6");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");    
                                         }
                                     </script>
                                 </form>
@@ -405,7 +414,8 @@
                                     <script>
                                         button = document.getElementById("button7");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");    
                                         }
                                     </script>
                                 </form>
@@ -453,7 +463,8 @@
                                     <script>
                                         button = document.getElementById("button8");
                                         button.onclick = function(){
-                                            alert("Thêm vào giỏ hàng thành công");    
+                                            alert("Cần phải đăng nhập !!!")
+                                        window.location.replace("login.html");    
                                         }
                                     </script>
                                 </form>

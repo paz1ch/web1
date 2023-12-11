@@ -27,6 +27,10 @@
 	<!-- top nav -->
 	
     <div class="topnav">
+        <div style="display: flex;" class="dangxuat">
+            <a href="login.html">Đăng nhập</a>
+            <a href="register.html" class="dangxuat">Đăng ký</a>
+        </div>
         <a class="active" href="index.html">Trang chủ</a>
         <a href="products.html">Sản phẩm</a>
         <a href="#" id="giohang">Giỏ hàng</a>
@@ -38,10 +42,8 @@
             }
         </script>
         <a href="search.html" class="account">Tìm kiếm</a>
-        <a href="login.html" class="account">Đăng nhập</a>
-        <a href="register.html" class="account">Đăng ký</a>
         <div class="search-container">
-            <form action="">
+            <form action="search.html">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"> </i></button>
             </form>
@@ -120,7 +122,7 @@
                                 <p class="vote"><strong>100%</strong> hàng <strong>Chất lượng</strong>, đảm bảo <strong>Uy tín</strong>!</p>
                                 <div class="form-group">
                                     <label for="soluong">Số lượng đặt mua:</label>
-                                    <input type="number" class="form-control" id="soluong" name="soluong">
+                                    <input type="number" class="form-control" id="soluong" name="soluong" value="1">
                                 </div>
                                 <div class="action">
                                     <div class="add-to-cart btn btn-default" id="btnThemVaoGioHang" onclick="addCart()">
@@ -128,11 +130,12 @@
                                     </div>
                                     <script>
                                         function addCart(){
-                                            alert("Thêm vào giỏ hàng thành công");
+                                            alert("Vui lòng đăng nhập");
+                                            window.location.replace("login.html");
                                         }
                                     </script>
                                     <br><br>
-                                    <a class="add-to-cart btn btn-default" id="muangay" href="cart.html" >Mua ngay</a>
+                                    <a class="add-to-cart btn btn-default" id="muangay" onclick="addCart()">Mua ngay</a>
                                 </div>
                             </div>
 

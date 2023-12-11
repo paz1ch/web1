@@ -16,22 +16,19 @@
     <body>
         <section id="home">
             <div class="topnav">
-                <a class="active" href="index.html">Trang chủ</a>
-                <a href="products.html">Sản phẩm</a>
-                <a href="#" id="giohang">Giỏ hàng</a>
-                <script>
-                    button = document.getElementById("giohang");
-                    button.onclick = function(){
-                        alert("Hãy đăng nhập trước để vào giỏ hàng");
-                        location.assign("login.html");
-                    }
-                </script>
-                <a href="search.html" class="account">Tìm kiếm</a>
-                <a href="login.html" class="account">Đăng nhập</a>
-                <a href="register.html" class="account">Đăng ký</a>
+                <div style="display: flex;" class="dangxuat">
+                    <a href="personal_infomation.html">
+                        <img src="images/phuccac.jpg" class="editphucadmin" >
+                    </a>
+                    <a href="index.html" class="dangxuat">Đăng xuất</a>
+                </div>
+                <a class="active" href="trangchu.html" style="background-color: black;">Trang chủ</a>
+                <a href="sanpham_trangchu.html">Sản phẩm</a>
+                <a href="cart.html">Giỏ hàng</a>
+                <a  href="search.html" class="account">Tìm kiếm</a>
                 <div class="search-container">
-                    <form action="">
-                    <input type="text" placeholder="Search.." name="search">
+                    <form action="search.html">
+                    <input type="text" placeholder="Tìm kiếm.." name="search">
                     <button type="submit"><i class="fa fa-search"> </i></button>
                     </form>
                 </div>
@@ -215,7 +212,7 @@
                                     button1 = document.getElementById("dathang");
                                     button1.onclick = function(){
                                         alert("Đặt hàng thành công. Bạn sẽ được đưa về trang chủ, Vui lòng giữ điện thoại khi tới ngày giao hàng và kiểm tra email để theo dõi ngày giao hàng");
-                                        location.assign("index.html");
+                                        location.assign("sanpham_trangchu.html");
                                     }
                                 </script>
 
