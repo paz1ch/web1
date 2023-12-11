@@ -33,15 +33,25 @@ select, input:not(#img), option{
 i[class="fa-solid fa-image"]{
     margin-top: 10px;
 }
-/* ảnh đại diện */
-.img{
+
+/* them hinh anh */
+img.avatar{
+    width: 200px;
+    padding-bottom: 30px;
+    filter: brightness(90%);
+}
+.add-image{
+    background-color:#343a40;
     padding: 10px;
+    font-size: 18px;
     border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    text-transform:none;
+    margin-left: 10px;
 }
 .img:hover{
-    background-color: #343a40;
     cursor: pointer;
-    color: white;
 }
 
 /* nút cập nhật và reset */
@@ -80,8 +90,4 @@ i[class="fa-solid fa-image"]{
     z-index: 0;    
 }
 
-/* anh dai dien */
-.avatar{
-    padding-top:10px
-}
 
