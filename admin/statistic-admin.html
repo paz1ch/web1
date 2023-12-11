@@ -103,22 +103,7 @@
             <div>
               <form action="#" class="form-search">
                 <div style="padding-bottom: 10px;">
-                  <h5 class="h5-search">--Tìm kiếm--</h5>
-                  <label for="" class="label">Năm:</label>
-                  <select name="" id="" class="select">
-                    <option value="">Tất cả</option>
-                    <option value="">2019</option>
-                    <option value="">2020</option>
-                  </select>
-                  <label for="" class="label">Quý:</label>
-                  <select name="" id="" class="select">
-                    <option value="">Tất cả</option>
-                    <option value="">Quý 1</option>
-                    <option value="">Quý 2</option>
-                    <option value="">Quý 3</option>
-                    <option value="">Quý 4</option>
-                  </select>
-                  <label for="" class="label">Loại sản phẩm:</label>
+                  <h5 class="h5-search">--Tìm--</h5>
                   <select name="" id="" class="select">
                     <option value="">Tất cả</option>
                     <option value="">Giường</option>
@@ -126,6 +111,11 @@
                     <option value="">Ghế</option>
                     <option value="">Gương</option>
                   </select>
+                  <input type="text" placeholder="Tìm kiếm tên món" class="select">
+                  <label for="" class="time">Từ</label>
+                  <input type="date" class="select">
+                  <label for="" class="time">Đến</label>
+                  <input type="date" class="select">
                   <input type="submit" id="submitbutton" style="display: none">
                   <label for="submitbutton">
                     <span onclick="searchFunc()" class="button">Tìm</span>
@@ -149,121 +139,108 @@
           <div class="main-body">
               <h1>THỐNG KÊ</h1>
           </div>
+          
+          <table style="margin-bottom: 30px;">
+            <tr>
+              <th>Sản phẩm bán ra</th>
+              <th>Số lượng bán</th>
+              <th>Doanh thu</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>110</td>
+              <td>20.000.000.000</td>
+            </tr>
+          </table>
           <table>
-              <tr>
-                <th colspan="6">Năm 2019</th>
-              </tr>
-              <tr>
-                  <th>Thời gian</th>
-                  <th>Phân loại</th>
-                  <th>Tổng số lượng</th>
-                  <th>Đã bán</th>
-                  <th>Thu nhập</th>
-              </tr>
-              <tr>
-                  <td rowspan="4">Quý 1</td>
-                  <td>Giường</td>
-                  <td>500</td>
-                  <td>450</td>
-                  <td>135000</td>
-              </tr>
-              <tr>
-                  <td>Gương</td>
-                  <td>1000</td>
-                  <td>852</td>
-                  <td>17040</td>
-              </tr>
-              <tr>
-                  <td>Ghế</td>
-                  <td>1000</td>
-                  <td>910</td>
-                  <td>45500</td>
-              </tr>
-              <tr>
-                  <td>Bàn</td>
-                  <td>1000</td>
-                  <td>890</td>
-                  <td>53400</td>
-              </tr>
-              <tr>
-                <td rowspan="4">Quý 2</td>
-                  <td>Giường</td>
-                  <td>500</td>
-                  <td>450</td>
-                  <td>135000</td>
-              </tr>
-              <tr>
-                  <td>Gương</td>
-                  <td>1000</td>
-                  <td>852</td>
-                  <td>17040</td>
-              </tr>
-              <tr>
-                  <td>Ghế</td>
-                  <td>1000</td>
-                  <td>910</td>
-                  <td>45500</td>
-              </tr>
-              <tr>
-                  <td>Bàn</td>
-                  <td>1000</td>
-                  <td>890</td>
-                  <td>53400</td>
-              </tr>
-              <tr>
-                <td rowspan="4">Quý 3</td>
-                  <td>Giường</td>
-                  <td>500</td>
-                  <td>450</td>
-                  <td>135000</td>
-              </tr>
-              <tr>
-                  <td>Gương</td>
-                  <td>1000</td>
-                  <td>852</td>
-                  <td>17040</td>
-              </tr>
-              <tr>
-                  <td>Ghế</td>
-                  <td>1000</td>
-                  <td>910</td>
-                  <td>45500</td>
-              </tr>
-              <tr>
-                  <td>Bàn</td>
-                  <td>1000</td>
-                  <td>890</td>
-                  <td>53400</td>
-              </tr>
-              <tr>
-                <td rowspan="4">Quý 4</td>
-                  <td>Giường</td>
-                  <td>500</td>
-                  <td>450</td>
-                  <td>135000</td>
-              </tr>
-              <tr>
-                  <td>Gương</td>
-                  <td>1000</td>
-                  <td>852</td>
-                  <td>17040</td>
-              </tr>
-              <tr>
-                  <td>Ghế</td>
-                  <td>1000</td>
-                  <td>910</td>
-                  <td>45500</td>
-              </tr>
-              <tr>
-                  <td>Bàn</td>
-                  <td>1000</td>
-                  <td>890</td>
-                  <td>53400</td>
-              </tr>
-              <tr>
-                <th colspan="4" class="thunhap">Tổng thu nhập</th>
-                <td style="font-weight: bold;">20 tỷ</td>
-              </tr>
+            <tr>
+              <th>STT</th>
+              <th>Loại</th>
+              <th colspan="2">Tên sản phẩm</th>
+              <th>Số lượng bán</th>
+              <th>Doanh thu</th>
+              <th>Thông tin</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Giường</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Giường-1</td>
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>
+                <a href="chitiet1.html">Chi tiết</a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Giường</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Giường-2</td>
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Giường</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Giường-3</td>
+
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Ghế</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Ghế-1</td>
+
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Ghế</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Ghế-2</td>
+
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Bàn</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Bàn-1</td>
+
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Gương</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Gương-1</td>
+
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Gương</td>
+              <td><img src="image/bed1.jpg" alt=""></td>
+              <td>Gương-2</td>
+
+              <td>10</td>
+              <td>200.000.000</td>
+              <td>Chi tiết</td>
+            </tr>
           </table>
           </div>
       </section>
