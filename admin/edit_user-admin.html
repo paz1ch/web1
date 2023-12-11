@@ -96,16 +96,19 @@
       <section class="main">
 
           <div class="main-top"></div>
-
           <div class="background-section">
-
           <div class="main-body">
               <h1>CẬP NHẬT THÔNG TIN NGƯỜI DÙNG</h1>
           </div>
 
-          <div>
-            <img src="image/phuccac.jpg" alt="" width="100px" height="100px">
-            <h1 style="text-transform: uppercase;">ảnh đại diện</h1>
+          <div class="main-body">
+            <img src="image/phuccac.jpg" alt="add image" class="avatar">
+            <form action="" style="padding-bottom: 30px;">
+              <input type="file" name="uploadfile" id="img" style="display: none;">
+              <label for="img" class="img" >
+                <span class="add-image">Sửa hình ảnh</span>
+              </label>
+            </form>
           </div>
 
           <table>
@@ -159,7 +162,6 @@
             </tr>
             <tr>
                 <th>Phương thức thanh toán</th>
-                <th>Ảnh đại diện</th>
             </tr>
             <tr>
                 <td>
@@ -170,15 +172,6 @@
                     </select>
                   </form>
                 </td>
-                <td class="image-form">
-                  <form action="">
-                    <input type="file" name="uploadfile" id="img" style="display: none;">
-                    <label class="img" for="img">
-                        <i class="fa-solid fa-image"></i>
-                        Cập nhật hình ảnh
-                    </label>
-                  </form>
-                </td>   
               </tr>
           </table>
           <form class="reset-form">

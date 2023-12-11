@@ -54,6 +54,14 @@ td.soluong{
     text-align: center;
     width: 5%;
 }
+div.soluong{
+    margin-bottom: 8px;
+}
+div.sanpham{
+    margin-bottom: 8px;
+}
+
+
 td.sanpham{
     text-align: center;
     width: 10%;

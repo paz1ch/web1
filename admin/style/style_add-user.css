@@ -29,20 +29,6 @@ select, input:not(#img), option{
     border-radius: 0.25rem;
     transition: border-color .15s
 }
-
-i[class="fa-solid fa-image"]{
-    margin-top: 10px;
-}
-
-.img{
-    padding: 10px;
-    border-radius: 5px;
-}
-.img:hover{
-    background-color: #343a40;
-    cursor: pointer;
-    color: white;
-}
 .buttonsubmit, .buttonReset{
     font-size: 16px;
     background-color:#343a40;
@@ -60,6 +46,28 @@ i[class="fa-solid fa-image"]{
 .submit-form:hover, .reset-form:hover{
     color: white;
 }
+
+/* them hinh anh */
+img[src="image/none-image.png"]{
+    width: 200px;
+    padding-bottom: 30px;
+    filter: brightness(90%);
+}
+.add-image{
+    background-color:#343a40;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    text-transform:none;
+    margin-left: 10px;
+}
+.img:hover{
+    cursor: pointer;
+}
+
+/*  */
 .background-section{
     padding-bottom: 2%;
 }

@@ -30,22 +30,28 @@ select, input:not(#img), option{
     transition: border-color .15s
 }
 
-/* image của cập nhật hình ảnh */
 
-.img{
-    font-size: 1rem;
-    font-weight: 400;
-}
-.img:hover{
-    background-color: #343a40;
-    cursor: pointer;
-    color: rgb(228, 228, 228);
-    padding: 10px;
-    border-radius: 5px;
-}
-img{
+/* them hinh anh */
+img[src="image/bed1.jpg"],img[src="image/bed2.jpg"],img[src="image/bed3.jpg"]{
+    width: 200px;
+    padding-bottom: 30px;
     filter: brightness(90%);
 }
+
+.add-image{
+    background-color:#343a40;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    text-transform:none;
+    margin-left: 10px;
+}
+.img:hover{
+    cursor: pointer;
+}
+
 /* nút reset và cập nhật */
 .buttonsubmit, .buttonReset{
     font-size: 16px;

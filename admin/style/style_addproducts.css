@@ -30,21 +30,24 @@ select, input:not(#img), option{
     transition: border-color .15s
 }
 
-/* image của cập nhật hình ảnh */
-i[class="fa-solid fa-image"]{
-    margin-top: 10px;
+/* them hinh anh */
+img[src="image/none-image.png"]{
+    width: 200px;
+    padding-bottom: 30px;
+    filter: brightness(90%);
 }
-
-.img{
-    font-size: 1rem;
-    font-weight: 400;
+.add-image{
+    background-color:#343a40;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100;
+    text-transform:none;
+    margin-left: 10px;
 }
 .img:hover{
-    background-color: #343a40;
     cursor: pointer;
-    color: rgb(228, 228, 228);
-    padding: 10px;
-    border-radius: 5px;
 }
 
 /* nút reset và cập nhật */
