@@ -1,4 +1,4 @@
-# web_first_test
+# web_1
 The first exam of Group 7 in Web Programming course, class DCT122C1 SaiGon University
 
 Danh sách thành viên nhóm 7:
